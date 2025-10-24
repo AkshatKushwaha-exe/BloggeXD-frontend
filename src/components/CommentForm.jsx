@@ -14,7 +14,7 @@ const CommentForm = ({ blogId, onCommentAdded }) => {
       author: author || "Anonymous"
     };
 
-    axios.post(`http://localhost:5000/api/comments/${blogId}`, newComment)
+    axios.post(`https://bloggexd-backend-api.onrender.com/api/comments/${blogId}`, newComment)
       .then(() => {
         setText("");
         setAuthor("");

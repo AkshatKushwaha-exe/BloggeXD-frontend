@@ -8,7 +8,7 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/blogs")
+    axios.get("https://bloggexd-backend-api.onrender.com/api/blogs")
       .then(res => {
         setBlogs(res.data);
         setLoading(false);

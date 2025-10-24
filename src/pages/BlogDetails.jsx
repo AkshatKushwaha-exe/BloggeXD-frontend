@@ -12,7 +12,7 @@ const BlogDetails = () => {
   const navigate = useNavigate();
 
   const fetchBlog = () => {
-    axios.get(`http://localhost:5000/api/blogs/${id}`)
+    axios.get(`https://bloggexd-backend-api.onrender.com/api/blogs/${id}`)
       .then(res => setBlog(res.data))
       .catch(err => {
         console.log(err);
@@ -31,7 +31,7 @@ const BlogDetails = () => {
   const handleDelete = async () => {
     if (window.confirm("Are you sure you want to delete this post?")) {
       try {
-        await axios.delete(`http://localhost:5000/api/blogs/${id}`);
+        await axios.delete(`https://bloggexd-backend-api.onrender.com/api/blogs/${id}`);
         navigate("/");
       } catch (err) {
         console.log(err);

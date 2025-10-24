@@ -18,7 +18,7 @@ const CreateBlog = () => {
       return;
     }
     
-    await axios.post("http://localhost:5000/api/blogs", {
+    await axios.post("https://bloggexd-backend-api.onrender.com/api/blogs", {
       ...form,
       author: form.author || "Anonymous"
     });
