@@ -4,11 +4,11 @@
 }
 
 .home-title {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  font-weight: bold;
-  color: #222;
-  border-bottom: 2px solid #eee;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  border-bottom: 1px solid #334155;
   padding-bottom: 0.5rem;
 }
 
@@ -18,30 +18,31 @@
 }
 
 .blog-card {
-  border: 1px solid #ddd;
+  border: 1px solid #334155;
   padding: 1.5rem;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  background: #ffffff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  transition: box-shadow 0.2s ease-in-out;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  background: #1E293B; 
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
 .blog-card:hover {
-  background-color: #fcfcfc;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 15px rgba(56, 189, 248, 0.1);
+  border-color: #38BDF8;
 }
 
 .blog-card-title {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 600;
   margin: 0 0 0.5rem 0;
-  color: #007bff;
+  color: #F8FAFC;
 }
 
 .blog-card-author {
   font-size: 0.9rem;
-  color: #555;
+  color: #94A3B8;
   margin: 0;
   font-style: italic;
 }

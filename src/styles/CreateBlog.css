@@ -1,18 +1,20 @@
 
 .create-blog-container {
-  padding: 2rem;
+  padding: 2.5rem;
   max-width: 700px;
-  margin: 0 auto;
-  background: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; 
+  background: #1E293B;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
 }
 
 .create-blog-title {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
-  font-weight: bold;
+  margin-bottom: 2rem;
+  font-weight: 700;
   text-align: center;
+  color: #FFFFFF;
 }
 
 .blog-form {
@@ -23,12 +25,22 @@
 .form-input,
 .form-textarea {
   width: 100%;
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 1rem;
+  padding: 0.9rem;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
   font-size: 1rem;
   font-family: inherit;
+  background-color: #0F172A;
+  color: #E2E8F0;
+  transition: all 0.2s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #38BDF8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.3);
 }
 
 .form-textarea {
@@ -37,17 +49,19 @@
 }
 
 .form-button {
-  background-color: #007bff;
+  background-image: linear-gradient(to right, #38BDF8, #0EA5E9);
   color: white;
-  padding: 0.8rem 1.2rem;
+  padding: 0.9rem 1.5rem;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 1.1rem;
-  font-weight: 500;
-  transition: background-color 0.2s;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(56, 189, 248, 0.2);
 }
 
 .form-button:hover {
-  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(56, 189, 248, 0.3);
 }

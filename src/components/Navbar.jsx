@@ -4,7 +4,10 @@ import "../styles/Navbar.css";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <Link to="/" className="nav-brand">BloggeXD</Link>
+      {}
+      <Link to="/" className="nav-brand">
+        Blogg<span className="logo-dot">.</span>xd
+      </Link>
       <div className="nav-links">
         <Link to="/" className="nav-link">Home</Link>
         <Link to="/create" className="nav-link">Create Post</Link>

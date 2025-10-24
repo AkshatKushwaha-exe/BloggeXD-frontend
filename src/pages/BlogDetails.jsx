@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import ReactMarkdown from "react-markdown";
-import CommentList from "../components/CommentList"; 
-import CommentForm from "../components/CommentForm";  
+import CommentList from "../components/CommentList";
+import CommentForm from "../components/CommentForm";
 import "../styles/BlogDetails.css";
 
 const BlogDetails = () => {
@@ -52,7 +52,10 @@ const BlogDetails = () => {
         <ReactMarkdown>{blog.content}</ReactMarkdown>
       </div>
 
-      <button onClick={handleDelete} className="delete-button">Delete Post</button>
+      {}
+      <button onClick={handleDelete} className="delete-button">
+        Delete Post
+      </button>
 
       <hr className="divider" />
       
