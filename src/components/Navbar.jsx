@@ -6,10 +6,10 @@ const Navbar = () => {
     <nav className="navbar">
       {}
       <Link to="/" className="nav-brand">
-        Blogg<span className="logo-dot">.</span>xd
+        Blogg<span className="logo-dot">.</span>XD
       </Link>
       <div className="nav-links">
-        <Link to="/" className="nav-link">Home</Link>
+        {/* <Link to="/" className="nav-link">Home</Link> */}
         <Link to="/create" className="nav-link">Create Post</Link>
       </div>
     </nav>
